@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empresa 1"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ventas\nTotales"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="S/."
+        android:id="@+id/textView3"
+        android:layout_above="@+id/listView"
+        android:layout_toRightOf="@+id/tvTotalDolar"
+        android:layout_toEndOf="@+id/tvTotalDolar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="$/."
+        android:id="@+id/textView4"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_above="@+id/listView"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_marginLeft="36dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Proyectado Mes Actual"
+        android:id="@+id/textView5"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/listView"
+        android:layout_alignLeft="@+id/tvTotalDolar"
+        android:layout_alignStart="@+id/tvTotalDolar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="1000"
+        android:id="@+id/tvTotal"
+        android:layout_above="@+id/tvLogro"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Logro Mes Actual"
+        android:id="@+id/tvTotalDolar"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/listView"
+        android:layout_alignStart="@+id/listView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="50%"
+        android:id="@+id/tvLogro"
+        android:layout_below="@+id/textView5"
+        android:layout_alignRight="@+id/tvTotal"
+        android:layout_alignEnd="@+id/tvTotal" />
+
+</RelativeLayout>
